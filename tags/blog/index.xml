@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Walker088&#39;s Blog</title>
-    <link>https://blog.walker088.tw/post/</link>
-    <description>Recent content in Posts on Walker088&#39;s Blog</description>
+    <title>Blog on Walker088&#39;s Blog</title>
+    <link>https://blog.walker088.tw/tags/blog/</link>
+    <description>Recent content in Blog on Walker088&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 05 Jan 2019 02:16:15 +0800</lastBuildDate>
     
-	<atom:link href="https://blog.walker088.tw/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.walker088.tw/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -23,33 +23,6 @@
  Hugo Hugo 是使用Golang開發的網誌框架，Github上的星星數比Hexo略多， 個人滿喜歡的特色之一是，Template的轉換只需要再設定檔裡面更改名字即可， 不像Jekyll手續複雜。此外因為是用Golang撰寫，在編譯速度上也是樂勝樓上兩個工具， 因此今天的分享就來看看怎麼使用Hugo迅速起手撰寫部落格啦。
   2. 安裝 Hugo 今天使用的系統是MacOS，因此接下來的分享用到的指令會是Mac版本的， 如果你使用的是其他的作業系統，則可以參考 官方文件的教學。 我們選擇使用macOS下知名的套件管理工具Homebrew來安裝Hugo， 如果你的電腦裡面已經有安裝過Homebrew了， 就可以直些從下面 brew install 的部分開始操作。
 # If you haven&amp;#39;t installed homebrew $ mkdir homebrew &amp;amp;&amp;amp; curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew # Install hugo via homebrew $ brew install hugo # Check whether hugo is be installed $ hugo version 3.</description>
-    </item>
-    
-    <item>
-      <title>Debian 9 安裝教學</title>
-      <link>https://blog.walker088.tw/post/debian9-install/</link>
-      <pubDate>Fri, 15 Jun 2018 00:09:10 +0800</pubDate>
-      
-      <guid>https://blog.walker088.tw/post/debian9-install/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Private Chain Setup of MSIG-BFT Consenesus Algorithm</title>
-      <link>https://blog.walker088.tw/post/msig-privatechain-one/</link>
-      <pubDate>Fri, 15 Jun 2018 00:09:10 +0800</pubDate>
-      
-      <guid>https://blog.walker088.tw/post/msig-privatechain-one/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>使用Python建立自動交易系統(一)</title>
-      <link>https://blog.walker088.tw/post/tradepy-one/</link>
-      <pubDate>Fri, 15 Jun 2018 00:09:10 +0800</pubDate>
-      
-      <guid>https://blog.walker088.tw/post/tradepy-one/</guid>
-      <description></description>
     </item>
     
   </channel>
