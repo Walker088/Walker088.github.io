@@ -88,18 +88,18 @@
 <meta name='msapplication-navbutton-color' content="#02b875">
 <meta name="msapplication-TileColor" content="#02b875">
 <meta name="msapplication-TileImage" content="/icons/icon-144x144.png">
-<link rel="icon" href="/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="/icons/icon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-32x32.png">
-<link rel="icon" sizes="192x192" href="/icons/icon-192x192.png">
-<link rel="apple-touch-icon" href="/icons/icon-152x152.png">
-<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="https://blog.walker088.tw/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.walker088.tw/icons/icon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.walker088.tw/icons/icon-32x32.png">
+<link rel="icon" sizes="192x192" href="https://blog.walker088.tw/icons/icon-192x192.png">
+<link rel="apple-touch-icon" href="https://blog.walker088.tw/icons/icon-152x152.png">
+<link rel="manifest" href="https://blog.walker088.tw/manifest.json">
 
 
-<link rel="preload" href="/styles/main.min.css" as="style">
+<link rel="preload" href="https://blog.walker088.tw/styles/main.min.css" as="style">
 <link rel="preload" href="https://fonts.googleapis.com/css?family=Lobster" as="style">
-<link rel="preload" href="/images/avatar.png" as="image">
-<link rel="preload" href="/images/grey-prism.svg" as="image">
+<link rel="preload" href="https://blog.walker088.tw/images/avatar.png" as="image">
+<link rel="preload" href="https://blog.walker088.tw/images/grey-prism.svg" as="image">
 
 
 <style>
@@ -107,7 +107,7 @@
     background: rgb(244, 243, 241) url('/images/grey-prism.svg') repeat fixed;
   }
 </style>
-<link rel="stylesheet" href="/styles/main.min.css">
+<link rel="stylesheet" href="https://blog.walker088.tw/styles/main.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
 
 
@@ -148,7 +148,7 @@
     
     
   <header class="site-header">
-  <img class="avatar" src="/images/avatar.png" alt="Avatar">
+  <img class="avatar" src="https://blog.walker088.tw/images/avatar.png" alt="Avatar">
   
   <h2 class="title">Walker088&#39;s Blog</h2>
   
@@ -168,35 +168,35 @@
           
           
            is-active">
-          <a href="/">Home</a>
+          <a href="https://blog.walker088.tw/">Home</a>
         </li>
       
         <li class="menu-item
           
           
           ">
-          <a href="/categories/">Categories</a>
+          <a href="https://blog.walker088.tw/categories/">Categories</a>
         </li>
       
         <li class="menu-item
           
           
           ">
-          <a href="/history/">History</a>
+          <a href="https://blog.walker088.tw/history/">History</a>
         </li>
       
         <li class="menu-item
           
           
           ">
-          <a href="/tags/">Tags</a>
+          <a href="https://blog.walker088.tw/tags/">Tags</a>
         </li>
       
         <li class="menu-item
           
           
           ">
-          <a href="/about/">About</a>
+          <a href="https://blog.walker088.tw/about/">About</a>
         </li>
       
     </ul>
@@ -234,7 +234,7 @@
   <section class="main post-detail">
     <header class="post-header">
       <h1 class="post-title">使用 Hugo 打造個人部落格</h1>
-      <p class="post-meta">@Walker088 · Jan 5, 2019 · 3 min read</p>
+      <p class="post-meta">@Walker088 · Jan 5, 2019 · 4 min read</p>
     </header>
     <article class="post-content">
 
@@ -298,7 +298,7 @@ $ hugo new post/welcome.md</code></pre></div>
 <p>接下來我們需要修改專案的設定檔 <strong>config.toml</strong>，
 裡面的內容相當清楚，包括給部落格取名、指定Template名稱等等。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#75715e"># ./config.toml</span>
-<span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;https://{{Your Site}}&#34;</span>
+<span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;https://{{your_site}}&#34;</span>
 <span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;en-us&#34;</span>
 <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;{{Your blog&#39;s name}}&#34;</span>
 <span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;hugo-nuo&#34;</span>
@@ -309,53 +309,53 @@ $ hugo new post/welcome.md</code></pre></div>
 關於這份模板可以使用的設定可以
 <a href="https://github.com/laozhu/hugo-nuo" title="Title">參考它文件的說明</a>，
 或者在 <em>./themes/hugo-nuo/exampleSite/config.toml</em> 這份文件裡面也有其他參數的範例。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># ./config.toml</span>
-baseURL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://{{your Site}}&#34;</span>
-languageCode <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;en-us&#34;</span>
-title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;{{your blog&#39;s name}}&#34;</span>
-theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hugo-nuo&#34;</span>
-PygmentsCodeFences <span style="color:#f92672">=</span> true
-googleAnalytics <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;{{Google Analytics UA number}}&#34;</span>
-disqusShortname <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;{{Disqus Username}}&#34;</span>
-enableRobotsTXT <span style="color:#f92672">=</span> true
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#75715e"># ./config.toml</span>
+<span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;https://{{your_site}}&#34;</span>
+<span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;en-us&#34;</span>
+<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;{{your blog&#39;s name}}&#34;</span>
+<span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;hugo-nuo&#34;</span>
+<span style="color:#a6e22e">PygmentsCodeFences</span> = <span style="color:#66d9ef">true</span>
+<span style="color:#a6e22e">googleAnalytics</span> = <span style="color:#e6db74">&#34;{{Google Analytics UA number}}&#34;</span>
+<span style="color:#a6e22e">disqusShortname</span> = <span style="color:#e6db74">&#34;{{Disqus Username}}&#34;</span>
+<span style="color:#a6e22e">enableRobotsTXT</span> = <span style="color:#66d9ef">true</span>
 
-<span style="color:#f92672">[</span>menu<span style="color:#f92672">]</span>
-  <span style="color:#f92672">[[</span>menu.main<span style="color:#f92672">]]</span>
-    identifier <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;home&#34;</span>
-	name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Home&#34;</span>
-	url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/&#34;</span>
-	weight <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#75715e"># weight用來調整Link在側邊菜單的順序</span>
-  <span style="color:#f92672">[[</span>menu.main<span style="color:#f92672">]]</span>
-    identifier <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;categories&#34;</span>
-	name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Categories&#34;</span>
-	url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/categories/&#34;</span>
-	weight <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
-  <span style="color:#f92672">[[</span>menu.main<span style="color:#f92672">]]</span>
-    identifier <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;history&#34;</span>
-	name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;History&#34;</span>
-	url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/history/&#34;</span>
-	weight <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>
-  <span style="color:#f92672">[[</span>menu.main<span style="color:#f92672">]]</span>
-    identifier <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;tags&#34;</span>
-	name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Tags&#34;</span>
-	url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/tags/&#34;</span>
-	weight <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>
-  <span style="color:#f92672">[[</span>menu.main<span style="color:#f92672">]]</span>
-    identifier <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;about&#34;</span>
-	name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;About&#34;</span>
-	url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/about/&#34;</span>
-	weight <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+[<span style="color:#a6e22e">menu</span>]
+  [[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+    <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;home&#34;</span>
+	<span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Home&#34;</span>
+	<span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/&#34;</span>
+	<span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">1</span> <span style="color:#75715e"># weight用來調整Link在側邊菜單的順序</span>
+  [[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+    <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;categories&#34;</span>
+	<span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Categories&#34;</span>
+	<span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/categories/&#34;</span>
+	<span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">2</span>
+  [[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+    <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;history&#34;</span>
+	<span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;History&#34;</span>
+	<span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/history/&#34;</span>
+	<span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">3</span>
+  [[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+    <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;tags&#34;</span>
+	<span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Tags&#34;</span>
+	<span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/tags/&#34;</span>
+	<span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">4</span>
+  [[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+    <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;about&#34;</span>
+	<span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;About&#34;</span>
+	<span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/about/&#34;</span>
+	<span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">5</span>
 
-<span style="color:#f92672">[</span>params<span style="color:#f92672">]</span>
-  seotitle <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hugo Blog (SEO Version)&#34;</span>
-  subtitle <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;- work hard and play hard -&#34;</span>
-  description <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.&#34;</span>
+[<span style="color:#a6e22e">params</span>]
+  <span style="color:#a6e22e">seotitle</span> = <span style="color:#e6db74">&#34;Hugo Blog (SEO Version)&#34;</span>
+  <span style="color:#a6e22e">subtitle</span> = <span style="color:#e6db74">&#34;- work hard and play hard -&#34;</span>
+  <span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#34;Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.&#34;</span>
 
-  email <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;{{your email}}&#34;</span>
-  github <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;{{your github id}}&#34;</span>
-  linkedin <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;{{your linkedin id}}&#34;</span>
-  twitter <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;{{your twitter id}}&#34;</span>
-  instagram <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;{{your ig id}}&#34;</span></code></pre></div>
+  <span style="color:#a6e22e">email</span> = <span style="color:#e6db74">&#34;{{your email}}&#34;</span>
+  <span style="color:#a6e22e">github</span> = <span style="color:#e6db74">&#34;{{your github id}}&#34;</span>
+  <span style="color:#a6e22e">linkedin</span> = <span style="color:#e6db74">&#34;{{your linkedin id}}&#34;</span>
+  <span style="color:#a6e22e">twitter</span> = <span style="color:#e6db74">&#34;{{your twitter id}}&#34;</span>
+  <span style="color:#a6e22e">instagram</span> = <span style="color:#e6db74">&#34;{{your ig id}}&#34;</span></code></pre></div>
 <p>接下來我們可以替剛剛新增的文章 <strong>welcom.md</strong> 加上分類以及標籤方便查找：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># ./content/post/welcome.md</span>
 ---
@@ -370,10 +370,57 @@ Welcom to my blog !!!</code></pre></div>
 <p>完成上述工作後就可以先在本地端查看結果了!
 在terminal內下完啟動伺服器的命令後，在瀏覽器輸入 <em><a href="http://localhost:1313">http://localhost:1313</a></em> 就可以看到我們剛剛的成果了。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$ hugo server -D <span style="color:#75715e"># -D 參數表示顯示草稿</span></code></pre></div>
-<p>這邊要注意我們剛剛新增的頁面 <strong>about</strong>, <strong>history</strong>, <strong>tags</strong>, <strong>categories</strong> 和文章 <strong>welcome.md</strong> 在*header*上預設 *draft: true*，
+<p>這邊要注意我們剛剛新增的頁面 <strong>about</strong>, <strong>history</strong>, <strong>tags</strong>, <strong>categories</strong> 和文章 <strong>welcome.md</strong> 在 <em>header</em> 上預設 *draft: true*，
 在正式部署前需要改成 <em>false</em> 才可以正確顯示哦！</p>
 
-<h3 id="4-部署到-github-page">4. 部署到 Github Page</h3>
+<h3 id="4-新增-rss-訂閱功能">4. 新增 RSS 訂閱功能</h3>
+
+<p>在這份模板內也有提供 RSS 訂閱的功能 (但在他的教學文件內並沒有提到，因為並不完整的關係，需要自己做一些修改，應該算是隱藏版功能摁摁)。
+首先在設定檔 <em>./config.toml</em> 內加入 <em>rss</em> 的設定 (最後一行)：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#75715e"># ./config.toml</span>
+[<span style="color:#a6e22e">params</span>]
+  <span style="color:#a6e22e">seotitle</span> = <span style="color:#e6db74">&#34;Hugo Blog (SEO Version)&#34;</span>
+  <span style="color:#a6e22e">subtitle</span> = <span style="color:#e6db74">&#34;- work hard and play hard -&#34;</span>
+  <span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#34;Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.&#34;</span>
+
+  <span style="color:#a6e22e">email</span> = <span style="color:#e6db74">&#34;{{your email}}&#34;</span>
+  <span style="color:#a6e22e">github</span> = <span style="color:#e6db74">&#34;{{your github id}}&#34;</span>
+  <span style="color:#a6e22e">linkedin</span> = <span style="color:#e6db74">&#34;{{your linkedin id}}&#34;</span>
+  <span style="color:#a6e22e">twitter</span> = <span style="color:#e6db74">&#34;{{your twitter id}}&#34;</span>
+  <span style="color:#a6e22e">instagram</span> = <span style="color:#e6db74">&#34;{{your ig id}}&#34;</span>
+  
+  <span style="color:#75715e"># e.g., http://{{user_name}}.github.io</span>
+  <span style="color:#a6e22e">rss</span> = <span style="color:#e6db74">&#34;http://{{your_site}}/index.xml&#34;</span></code></pre></div>
+<p>接著在新增一個產生 <em>rss</em> 的模板在專案目錄下： <em>./layout/index.rss.xml</em> ，這部分我們可以
+<a href="https://gohugo.io/templates/rss/#the-embedded-rss-xml" title="Title">參考官網的RSS模板教學</a>。
+這邊有個小小的更動是在迴圈產生 <em>&lt;item&gt;</em> 標籤的部分，為了避免連同我們的頁面都被加入 <em>rss</em> 檔案內因此新增了一個過濾器。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;rss</span> <span style="color:#a6e22e">version=</span><span style="color:#e6db74">&#34;2.0&#34;</span> <span style="color:#a6e22e">xmlns:atom=</span><span style="color:#e6db74">&#34;http://www.w3.org/2005/Atom&#34;</span><span style="color:#f92672">&gt;</span>
+  <span style="color:#f92672">&lt;channel&gt;</span>
+    <span style="color:#f92672">&lt;title&gt;</span>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}<span style="color:#f92672">&lt;/title&gt;</span>
+    <span style="color:#f92672">&lt;link&gt;</span>{{ .Permalink }}<span style="color:#f92672">&lt;/link&gt;</span>
+    <span style="color:#f92672">&lt;description&gt;</span>Recent content {{ if ne  .Title  .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}<span style="color:#f92672">&lt;/description&gt;</span>
+    <span style="color:#f92672">&lt;generator&gt;</span>Hugo -- gohugo.io<span style="color:#f92672">&lt;/generator&gt;</span>{{ with .Site.LanguageCode }}
+    <span style="color:#f92672">&lt;language&gt;</span>{{.}}<span style="color:#f92672">&lt;/language&gt;</span>{{end}}{{ with .Site.Author.email }}
+    <span style="color:#f92672">&lt;managingEditor&gt;</span>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}<span style="color:#f92672">&lt;/managingEditor&gt;</span>{{end}}{{ with .Site.Author.email }}
+    <span style="color:#f92672">&lt;webMaster&gt;</span>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}<span style="color:#f92672">&lt;/webMaster&gt;</span>{{end}}{{ with .Site.Copyright }}
+    <span style="color:#f92672">&lt;copyright&gt;</span>{{.}}<span style="color:#f92672">&lt;/copyright&gt;</span>{{end}}{{ if not .Date.IsZero }}
+    <span style="color:#f92672">&lt;lastBuildDate&gt;</span>{{ .Date.Format &#34;Mon, 02 Jan 2006 15:04:05 -0700&#34; | safeHTML }}<span style="color:#f92672">&lt;/lastBuildDate&gt;</span>{{ end }}
+    {{ with .OutputFormats.Get &#34;RSS&#34; }}
+        {{ printf &#34;<span style="color:#f92672">&lt;atom:link</span> <span style="color:#a6e22e">href=</span><span style="color:#e6db74">%q</span> <span style="color:#a6e22e">rel=</span><span style="color:#e6db74">\&#34;self\&#34;</span> <span style="color:#a6e22e">type=</span><span style="color:#e6db74">%q</span> <span style="color:#f92672">/&gt;</span>&#34; .Permalink .MediaType | safeHTML }}
+    {{ end }}
+    {{ range first 15 (where .Data.Pages &#34;Section&#34; &#34;post&#34;) }}
+    <span style="color:#f92672">&lt;item&gt;</span>
+      <span style="color:#f92672">&lt;title&gt;</span>{{ .Title }}<span style="color:#f92672">&lt;/title&gt;</span>
+      <span style="color:#f92672">&lt;link&gt;</span>{{ .Permalink }}<span style="color:#f92672">&lt;/link&gt;</span>
+      <span style="color:#f92672">&lt;pubDate&gt;</span>{{ .Date.Format &#34;Mon, 02 Jan 2006 15:04:05 -0700&#34; | safeHTML }}<span style="color:#f92672">&lt;/pubDate&gt;</span>
+      {{ with .Site.Author.email }}<span style="color:#f92672">&lt;author&gt;</span>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}<span style="color:#f92672">&lt;/author&gt;</span>{{end}}
+      <span style="color:#f92672">&lt;guid&gt;</span>{{ .Permalink }}<span style="color:#f92672">&lt;/guid&gt;</span>
+      <span style="color:#f92672">&lt;description&gt;</span>{{ .Summary | html }}<span style="color:#f92672">&lt;/description&gt;</span>
+    <span style="color:#f92672">&lt;/item&gt;</span>
+    {{ end }}
+  <span style="color:#f92672">&lt;/channel&gt;</span>
+<span style="color:#f92672">&lt;/rss&gt;</span></code></pre></div>
+<h3 id="5-部署到-github-page">5. 部署到 Github Page</h3>
 
 <p>我們使用Github Page把網誌部署到網路上。
 首先使用 hugo 指令將我們網站打包到專案目錄下的 <strong>./public</strong> 資料夾內，
@@ -394,9 +441,9 @@ $ git push -u origin</code></pre></div>
       
       <ul class="post-tags">
         
-          <li><a href="/tags/hugo"><span class="tag">Hugo</span></a></li>
+          <li><a href="https://blog.walker088.tw/tags/hugo"><span class="tag">Hugo</span></a></li>
         
-          <li><a href="/tags/blog"><span class="tag">Blog</span></a></li>
+          <li><a href="https://blog.walker088.tw/tags/blog"><span class="tag">Blog</span></a></li>
         
       </ul>
       
@@ -470,7 +517,7 @@ $ git push -u origin</code></pre></div>
 
 
 
-<script src="/scripts/index.min.js"></script>
+<script src="https://blog.walker088.tw/scripts/index.min.js"></script>
 
 <script>
   if ('serviceWorker' in navigator) {
